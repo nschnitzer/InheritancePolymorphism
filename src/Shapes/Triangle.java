@@ -6,7 +6,7 @@ public class Triangle extends Shape
 	
 	public Triangle()
 	{
-		
+		super();
 	}
 	
 	public Triangle(double s1, double s2, double s3) throws Exception
@@ -51,9 +51,10 @@ public class Triangle extends Shape
 		return perimeter;
 	}
 	
+	@Override
 	public int compareTo(Shape s)
 	{
 		return Double.compare(this.getArea(), s.getArea());
-	}
+	} 
 
 }

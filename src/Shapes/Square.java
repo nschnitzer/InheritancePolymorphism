@@ -2,7 +2,7 @@ package Shapes;
 
 public class Square extends Quadrilateral
 {
-	private double side;
+	private double sideLength;
 	private double area;
 	private double perimeter;
 	
@@ -28,6 +28,7 @@ public class Square extends Quadrilateral
 		return perimeter;
 	}
 	
+	@Override
 	public int compareTo(Shape s)
 	{
 		return Double.compare(this.getArea(), s.getArea());
