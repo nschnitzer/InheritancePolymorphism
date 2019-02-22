@@ -1,6 +1,6 @@
 package Shapes;
 
-public class Quadrilateral extends Shape
+public abstract class Quadrilateral extends Shape
 {
 	private double area;
 	private double perimeter;
@@ -10,26 +10,16 @@ public class Quadrilateral extends Shape
 		super(4);
 	}
 	
-	public Quadrilateral(double area, double perimeter)
-	{
-		super(area, perimeter, 4);
-	}
 	
-	public double getArea()
-	{
-		return area;
-	}
+	public abstract double getArea();
 	
-	public double getPerimeter()
-	{
-		return perimeter;
-	}
+	public abstract double getPerimeter();
 	
 	public double getSides()
 	{
 		return 4;
 	}
 	
-	
+	public abstract int compareTo(Shape s);
 
 }

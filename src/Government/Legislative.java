@@ -28,5 +28,7 @@ public abstract class Legislative extends Government
 	{
 		return term;
 	}
+	
+	public abstract int getNumMembers();
 
 }

@@ -13,9 +13,24 @@ public class Square extends Quadrilateral
 	
 	public Square(double s)
 	{
-		side = s;
+		super();
 		area = Math.pow(s, 2);
 		perimeter = s * 4;
+	}
+	
+	public double getArea()
+	{
+		return area;
+	}
+	
+	public double getPerimeter()
+	{
+		return perimeter;
+	}
+	
+	public int compareTo(Shape s)
+	{
+		return Double.compare(this.getArea(), s.getArea());
 	}
 
 }
