@@ -20,7 +20,7 @@ public abstract class Shape implements Comparable<Shape>
 	
 	public abstract double getPerimeter();
 	
-	@Override
+
 	public abstract int compareTo(Shape s);
 
 }
